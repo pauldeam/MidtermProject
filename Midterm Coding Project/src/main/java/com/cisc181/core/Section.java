@@ -8,7 +8,7 @@ public class Section {
 	UUID CourseID, SemesterId, SectionID;
 	int RoomID;
 	
-	public Section(int i, Object course, Object semester) {
+	public Section(UUID CourseID, UUID SemesterID) {
 		// TODO Auto-generated constructor stub
 	}
 	

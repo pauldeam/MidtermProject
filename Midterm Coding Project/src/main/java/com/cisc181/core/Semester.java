@@ -8,7 +8,7 @@ public class Semester {
 	UUID SemesterID;
 	Date StartDate;
 	Date EndDate;
-	public Semester(String string) {
+	public Semester() {
 		// TODO Auto-generated constructor stub
 	}
 	

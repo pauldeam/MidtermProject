@@ -48,32 +48,40 @@ public class Staff_Test {
 		assertEquals(actual, average, .000000000001);
 	}	
 
-	@Test
-	public void testPhoneNumber() {
+	@Test(expected=PersonException.class)
+	public void testBadPhoneNumber() throws PersonException {
 
 		String ex = "666666";
-		boolean caught = false;
-		Staff member = new Staff(null);
 		
-		try {
-			member.setPhone(ex);
-		} catch (Exception e) {
-			caught = true;
-		}
-		
-		assertTrue(caught);
+		Staff member1 = new Staff(null);
+		member1.setPhone(ex);
 		
 		
 }
-	
-	private void setPhone(String string) {
-		// TODO Auto-generated method stub
+	@Test
+	public void testPhoneNumber() {
+
+		String correct = "666 666 6666";
 		
-	}
+		Staff member1 = new Staff(null);
+		try {
+			member1.setPhone(correct);
+			
+			String strActualPhone = member1.getPhone();
+			
+			assertEquals(correct,strActualPhone);
+			
+		} catch (PersonException e) {
+			fail("Exception Thrown");
+		}
+		
+		
+}	
 
 	@Test
 	public void testDOB() {
 
+		
 		boolean caught = false;
 		try {
 			setDOB(1800, 2, 02);

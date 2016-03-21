@@ -12,7 +12,7 @@ public class Course {
 	private eMajor Major;
 	
 	
-	public Course(String string, int i, eMajor business) {
+	public Course() {
 		// TODO Auto-generated constructor stub
 	}
 	

@@ -7,4 +7,34 @@ public class Section {
 
 	UUID CourseID, SemesterId, SectionID;
 	int RoomID;
+	
+	public Section(int i, Object course, Object semester) {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public UUID getCourseID() {
+		return CourseID;
+	}
+	public void setCourseID(UUID courseID) {
+		CourseID = courseID;
+	}
+	public UUID getSemesterId() {
+		return SemesterId;
+	}
+	public void setSemesterId(UUID semesterId) {
+		SemesterId = semesterId;
+	}
+	public UUID getSectionID() {
+		return SectionID;
+	}
+	public void setSectionID(UUID sectionID) {
+		SectionID = sectionID;
+	}
+	public int getRoomID() {
+		return RoomID;
+	}
+	public void setRoomID(int roomID) {
+		RoomID = roomID;
+	}
+	
 }

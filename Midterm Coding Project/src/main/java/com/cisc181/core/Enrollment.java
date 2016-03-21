@@ -17,10 +17,37 @@ public class Enrollment {
 		return EnrollmentID;
 
 	}
-	
-	public void SetGrade(double grade)
-	{
-		
+
+	public UUID getSectionID() {
+		return SectionID;
+	}
+
+	public void setSectionID(UUID sectionID) {
+		SectionID = sectionID;
+	}
+
+	public UUID getStudentID() {
+		return StudentID;
+	}
+
+	public void setStudentID(UUID studentID) {
+		StudentID = studentID;
+	}
+
+	public UUID getEnrollmentID() {
+		return EnrollmentID;
+	}
+
+	public void setEnrollmentID(UUID enrollmentID) {
+		EnrollmentID = enrollmentID;
+	}
+
+	public double getGrade() {
+		return Grade;
+	}
+
+	public void setGrade(double grade) {
+		Grade = grade;
 	}
 	
 }

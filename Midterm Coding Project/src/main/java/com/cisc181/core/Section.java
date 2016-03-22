@@ -8,10 +8,11 @@ public class Section {
 	UUID CourseID, SemesterId, SectionID;
 	int RoomID;
 	
-	public Section(UUID CourseID, UUID SemesterID) {
+	
+	public Section(UUID CourseID, UUID SemesterID, int RoomID) {
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public UUID getCourseID() {
 		return CourseID;
 	}

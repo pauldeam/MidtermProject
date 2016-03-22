@@ -8,10 +8,11 @@ public class Semester {
 	UUID SemesterID;
 	Date StartDate;
 	Date EndDate;
-	public Semester() {
+	
+	public Semester(UUID randomUUID, Date time, Date time2) {
 		// TODO Auto-generated constructor stub
 	}
-	
+
 	public UUID getSemesterID() {
 		return SemesterID;
 	}

@@ -12,9 +12,13 @@ public class Course {
 	private eMajor Major;
 	
 	
-	public Course() {
-		// TODO Auto-generated constructor stub
-	}
+	public Course(String courseName, int gradePoints, eMajor major) {
+			
+			super();
+			CourseName = courseName;
+			GradePoints = gradePoints;
+			Major = major;
+		}
 	
 	public eMajor getMajor() {
 		return Major;

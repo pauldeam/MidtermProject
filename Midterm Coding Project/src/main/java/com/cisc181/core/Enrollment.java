@@ -7,6 +7,10 @@ public class Enrollment {
 	UUID SectionID, StudentID, EnrollmentID;
 	double Grade;
 	
+	public Enrollment(UUID studentID2, Object sectionID2) {
+		// TODO Auto-generated constructor stub
+	}
+
 	private void Enrollment()
 	{
 

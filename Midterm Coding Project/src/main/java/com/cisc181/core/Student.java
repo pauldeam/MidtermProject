@@ -40,4 +40,8 @@ public class Student extends Person {
 	{
 		super.PrintName();
 	}
+	public Object getSectionID() {
+		// TODO Auto-generated method stub
+		return null;
+	}
 }
